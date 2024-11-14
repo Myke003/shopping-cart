@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 2rem;
+  background-color: #f8f9f9 ;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #2e86c1;
+  height: fit-content;
+  color: #f7f9f9;
+}
+
+.shopping-car {
+  display: flex;
+  gap: 10px;
+  font-size: 22px;
+  background-color: #f8f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #2e86c1;
+}
+
+.layout{
+  display: flex;
+  padding-top: 2rem;
+ 
+}
+
+.store-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas con el mismo tamaño */
+  gap: 1rem; /* Espacio entre los productos */
+  width: 100%; /* Se adapta al ancho disponible */
+}
+
+.shopping-car-layout {
+  width: 20%;
+  background-color: #e5e8e8;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 8px;
+
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  max-width: 250px; /* Maximo ancho de cada tarjeta */
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product button {
+  background-color: #2e86c1;
+  color: #f7f9f9;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #1a5f8c;
+}
+
+.store-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#items .product {
+  border: 1px solid #ddd;
+  background-color: #f8f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item-image {
+  width: 40px;  /* Ajusta el tamaño de la imagen */
+  height: 40px; /* Mantén la proporción de la imagen */
+  margin-right: 10px;
+  object-fit: cover; /* Asegura que la imagen se recorte bien si es necesario */
+}
+
+.cart-item-description p {
+  margin: 0;
+}
